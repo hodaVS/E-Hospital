@@ -8,8 +8,11 @@ import json
 
 # Load environment variables
 load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key=api_key)
+
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY"),
+
+)
 
 # Initialize Flask app
 app = Flask(__name__)
