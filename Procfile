@@ -1,1 +1,1 @@
-web: gunicorn e-hospital-bot:app 
+web: gunicorn app:app 
